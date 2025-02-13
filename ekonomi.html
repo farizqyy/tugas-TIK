@@ -1,75 +1,31 @@
 <html>
     <head>
         <title>Seputar Bekasi</title>
-        <style>
-            nav {
-                background-color: #333;
-                border: 2px black;
-                margin: 0.25%;
-                padding: 0.1%;
-                font-size: 120%;
-                position: sticky;
-                top: 0;
-            }
-            header{
-                background-color: black;
-                color: yellow;
-                border: 1px;
-                margin: 0.25%;
-                padding: 0.01%;
-            }
-            article{
-                border: 5px;
-                margin: 0.25%;
-                padding: 0%;
-                background-color: #f2f3f4;
-            }
-            aside{
-                border: 5px;
-                padding: 0%;
-                margin: 0.25%;
-                float: right;
-            }
-            p{
-                text-align: justify;
-            }
-            nav.as{
-                text-align: center;
-            }
-            ul{
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-                overflow: hidden;
-                background-color: #333;
-                margin: 0.25%;
-            }
-            li{
-                float: left;
-            }
-            li a{
-                display: block;
-                color: white;
-                text-align: center;
-                padding: 14px 16px;
-                text-decoration: none;
-            }
-        </style>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <header><h1 align="center">Bekasi</h1></header>
-        <nav>
-            <ul>
-                <li><a href="index.html">home</a></li>
-                <li><a href="sejarah.html">sejarah</a></li>
-                <li><a href="geografi.html">geografi</a></li>
-                <li><a href="demografi.html">demografi</a></li>
-                <li><a href="ekonomi.html">ekonomi</a></li>
-                <li><a href="pendidikan.html">pendidikan</a></li>
-                <li><a href="transportasi.html">transportasi</a></li>
-                <li><a href="saran.html">saran</a></li>
-            </ul>
+        <nav id="nav-menu">
+                <a href="index.html">home</a>
+                <a href="sejarah.html">sejarah</a>
+                <a href="geografi.html">geografi</a>
+                <a href="demografi.html">demografi</a>
+                <a href="ekonomi.html">ekonomi</a>
+                <a href="pendidikan.html">pendidikan</a>
+                <a href="transportasi.html">transportasi</a>
+                <a href="saran.html">saran</a>
         </nav>
+        <button class="nav-toggle" onclick="toggleNav()">☰ Menu</button>
+        <script>
+            function toggleNav() {
+                var nav = document.getElementById("nav-menu");
+                if (nav.style.display === "block") {
+                    nav.style.display = "none";
+                } else {
+                    nav.style.display = "block";
+                }
+            }
+        </script>
             <article>
                 <p>Ekonomi Bekasi ditunjang oleh kegiatan perdagangan, perhotelan, dan restoran. Pada awalnya pusat pertokoan di Bekasi hanya berkembang di sepanjang Jalan Ir H. Juanda yang membujur sepanjang 3 km dari alun-alun kota hingga Terminal Bekasi. Di jalan ini terdapat berbagai pusat pertokoan yang dibangun sejak tahun 1978.</p>
                 <p>Selanjutnya sejak tahun 1993, kawasan sepanjang Jalan Ahmad Yani berkembang menjadi kawasan perdagangan seiring dengan munculnya beberapa mall serta sentra niaga. Pertumbuhan kawasan perdagangan terus berkembang hingga Jalan K.H. Noer Ali, Kranji, dan Kota Harapan Indah.</p>

@@ -1,138 +1,45 @@
 <html>
     <head>
         <title>Seputar Bekasi</title>
-        <style>
-            nav {
-                background-color: #333;
-                border: 2px black;
-                margin: 0.25%;
-                padding: 0.1%;
-                font-size: 120%;
-                position: sticky;
-                top: 0;
-            }
-            header{
-                background-color: black;
-                color: yellow;
-                border: 1px;
-                margin: 0.25%;
-                padding: 0.01%;
-            }
-            article{
-                border: 5px;
-                margin: 0.25%;
-                padding: 0%;
-                background-color: #f2f3f4;
-            }
-            aside{
-                border: 5px;
-                padding: 0%;
-                margin: 0.25%;
-                float: right;
-            }
-            p{
-                text-align: justify;
-            }
-            nav.as{
-                text-align: center;
-            }
-            ul{
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-                overflow: hidden;
-                margin: 0.25%;
-            }
-            li{
-                float: left;
-            }
-            li a{
-                display: block;
-                color: white;
-                text-align: center;
-                padding: 14px 16px;
-                text-decoration: none;
-            }
-            .container {
-                width: 80%;
-                margin: 0 auto;
-                padding: 20px;
-            }
-            .form-container {
-                background-color: #fff;
-                padding: 20px;
-                border-radius: 8px;
-                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            }
-            label {
-                font-size: 16px;
-                color: #333;
-            }
-            input[type="text"], input[type="email"], textarea {
-                width: 100%;
-                padding: 10px;
-                margin: 10px 0;
-                border: 1px solid #ddd;
-                border-radius: 4px;
-                font-size: 14px;
-            }
-            button {
-                background-color: #4CAF50;
-                color: white;
-                padding: 10px 20px;
-                border: none;
-                border-radius: 4px;
-                cursor: pointer;
-                font-size: 16px;
-            }
-            button:hover {
-                background-color: #45a049;
-            }
-            .message {
-                font-size: 14px;
-                text-align: center;
-                color: green;
-                margin-top: 20px;
-            }
-        </style>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <header><h1 align="center">Bekasi</h1></header>
-        <nav>
-            <ul>
-                <li><a href="index.html">home</a></li>
-                <li><a href="sejarah.html">sejarah</a></li>
-                <li><a href="geografi.html">geografi</a></li>
-                <li><a href="demografi.html">demografi</a></li>
-                <li><a href="ekonomi.html">ekonomi</a></li>
-                <li><a href="pendidikan.html">pendidikan</a></li>
-                <li><a href="transportasi.html">transportasi</a></li>
-                <li><a href="saran.html">saran</a></li>
-            </ul>
+        <nav id="nav-menu">
+                <a href="index.html">home</a>
+                <a href="sejarah.html">sejarah</a>
+                <a href="geografi.html">geografi</a>
+                <a href="demografi.html">demografi</a>
+                <a href="ekonomi.html">ekonomi</a>
+                <a href="pendidikan.html">pendidikan</a>
+                <a href="transportasi.html">transportasi</a>
+                <a href="saran.html">saran</a>
         </nav>
-
-
-    <div class="container">
-        <h1>Kritik dan Saran</h1>
-
+        <button class="nav-toggle" onclick="toggleNav()">☰ Menu</button>
+        <script>
+            function toggleNav() {
+                var nav = document.getElementById("nav-menu");
+                if (nav.style.display === "block") {
+                    nav.style.display = "none";
+                } else {
+                    nav.style.display = "block";
+                }
+            }
+        </script>
         <div class="form-container">
-            <form id="kritikSaranForm">
+            <h2>Kritik dan Saran</h2>
+            <form>
                 <label for="nama">Nama:</label>
-                <input type="text" id="nama" name="nama" required>
+                <input type="text" id="nama" name="nama" placeholder="Masukkan Nama Anda">
 
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email" placeholder="Masukkan Email Anda">
 
-                <label for="kritikSaran">Kritik dan Saran:</label>
-                <textarea id="kritikSaran" name="kritikSaran" rows="4" required></textarea>
+                <label for="saran">Kritik dan Saran:</label>
+                <textarea id="saran" name="saran" rows="4" placeholder="Tulis kritik dan saran Anda di sini"></textarea>
 
                 <button type="submit">Kirim</button>
             </form>
-
-            <div id="responseMessage" class="message" style="display:none;">
-                Terima kasih atas kritik dan saran Anda!
-            </div>
         </div>
-    </div>
     </body>
 </html>

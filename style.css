@@ -1,0 +1,171 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Gaya dasar untuk body */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    text-align: justify;
+}
+
+/* Header */
+header {
+    background: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 8px;
+}
+/* Tombol toggle navbar (menu hamburger) */
+.nav-toggle {
+    background: #0056b3;
+    color: white;
+    border: none;
+    padding: 12px 15px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px auto; /* Menengahkan tombol */
+    display: block;
+    width: fit-content; /* Ukuran tombol mengikuti teks */
+    text-align: center;
+}
+
+.nav-toggle:hover {
+    background: #00408a;
+}
+
+/* Navigasi */
+nav {
+    background: #0056b3;
+    padding: 10px;
+    text-align: center;
+    margin: 10px 0;
+    border-radius: 8px;
+    display: none; /* Nav disembunyikan secara default */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    padding: 8px 12px;
+    display: inline-block;
+}
+
+nav a:hover {
+    background: #00408a;
+    border-radius: 4px;
+}
+
+/* Container utama */
+.container {
+    display: flex;
+    justify-content: center;
+    max-width: 900px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    text-align: left;
+    background: #007BFF;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+img{
+    float: left;
+}
+
+/* Container untuk form */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 600px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto; /* Biar form ada di tengah */
+}
+
+/* Untuk label (Nama, Email, dsb.) */
+.form-container label {
+    font-weight: bold;
+    margin: 10px 0 5px;
+    display: block;
+    text-align: left;
+    width: 100%;
+}
+
+/* Input field */
+.form-container input,
+.form-container textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Tombol Kirim */
+.form-container button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.form-container button:hover {
+    background-color: #218838;
+}
+
+
+/* Responsif untuk layar kecil */
+@media (max-width: 600px) {
+    body {
+        padding: 5px;
+    }
+
+    header {
+        font-size: 20px;
+        padding: 12px;
+    }
+
+    .container {
+        padding: 12px;
+    }
+
+    .nav-toggle {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    nav a {
+        font-size: 16px;
+        padding: 8px;
+    }
+}
