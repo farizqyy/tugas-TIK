@@ -1,81 +1,36 @@
 <html>
     <head>
         <title>Seputar Bekasi</title>
+        <link rel="stylesheet" href="style.css">
         <style>
-            nav {
-                background-color: #333;
-                border: 2px black;
-                margin: 0.25%;
-                padding: 0.1%;
-                font-size: 120%;
-                position: sticky;
-                top: 0;
-            }
-            header{
-                background-color: black;
-                color: yellow;
-                border: 1px;
-                margin: 0.25%;
-                padding: 0.01%;
-            }
-            article{
-                border: 5px;
-                margin: 0.25%;
-                padding: 0%;
-                background-color: #f2f3f4;
-            }
-            aside{
-                border: 5px;
-                padding: 0%;
-                margin: 0.25%;
-                float: right;
-            }
-            p{
-                text-align: justify;
-            }
-            nav.as{
-                text-align: center;
-            }
-            ul{
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-                overflow: hidden;
-                background-color: #333;
-                margin: 0.25%;
-            }
             li{
-                float: left;
+                text-align: left;
             }
-            li a{
-                display: block;
-                color: white;
-                text-align: center;
-                padding: 14px 16px;
-                text-decoration: none;
-            }
-            .a{
-                float: none;
-                background-color: f2f3f4;
-                overflow: visible;
-                padding-left: 0;
-            }  
         </style>
     </head>
     <body>
         <header><h1 align="center">Bekasi</h1></header>
-        <nav>
-        <ul>
-            <li><a href="index.html">home</a></li>
-            <li><a href="sejarah.html">sejarah</a></li>
-            <li><a href="geografi.html">geografi</a></li>
-            <li><a href="demografi.html">demografi</a></li>
-            <li><a href="ekonomi.html">ekonomi</a></li>
-            <li><a href="pendidikan.html">pendidikan</a></li>
-            <li><a href="transportasi.html">transportasi</a></li>
-            <li><a href="saran.html">saran</a></li>
-        </ul>
+        <nav id="nav-menu">
+                <a href="index.html">home</a>
+                <a href="sejarah.html">sejarah</a>
+                <a href="geografi.html">geografi</a>
+                <a href="demografi.html">demografi</a>
+                <a href="ekonomi.html">ekonomi</a>
+                <a href="pendidikan.html">pendidikan</a>
+                <a href="transportasi.html">transportasi</a>
+                <a href="saran.html">saran</a>
         </nav>
+        <button class="nav-toggle" onclick="toggleNav()">☰ Menu</button>
+        <script>
+            function toggleNav() {
+                var nav = document.getElementById("nav-menu");
+                if (nav.style.display === "block") {
+                    nav.style.display = "none";
+                } else {
+                    nav.style.display = "block";
+                }
+            }
+        </script>
             <article>
                 <h2>Stasiun kereta api</h2>
                 <p>Kota Bekasi memiliki 1 stasiun utama, 3 stasiun Commuter Line, dan empat stasiun LRT Jabodebek. Stasiun Bekasi adalah stasiun kereta api utama di Kota Bekasi dan sekitarnya terutama bagi layanan kereta api antarkota dan kereta komuter. Stasiun kereta api lainnya di kota tersebut, diantaranya stasiun Kranji dan Bekasi Timur yang melayani kereta komuter Commuter Line Cikarang, sedangkan stasiun angkutan massal yang melayani layanan lintas rel terpadu Lin Bekasi adalah stasiun Jati Bening Baru, Cikunir 1 dan 2, serta Bekasi Barat yang terletak di Jalan Jenderal A. Yani di Kecamatan Bekasi Selatan.</p>
