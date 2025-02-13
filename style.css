@@ -90,8 +90,11 @@ footer {
     border-radius: 8px;
 }
 
-img{
-    float: left;
+img {
+    margin-right: 15px; /* Jarak antara gambar dan teks */
+    float: left; /* Agar gambar tetap di kiri */
+    max-width: 100%; /* Agar gambar tidak melebihi ukuran container */
+    height: auto; /* Menjaga proporsi gambar */
 }
 
 /* Container untuk form */
