@@ -80,6 +80,20 @@ nav a:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+article{
+    background: #016cdf;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    color: #ffff;
+    text-align: justify;
+    text-decoration: none;
+}
+article a{
+    color: white;
+    text-decoration: none;
+}
+
 /* Footer */
 footer {
     text-align: left;
@@ -95,6 +109,15 @@ img {
     float: left; /* Agar gambar tetap di kiri */
     max-width: 100%; /* Agar gambar tidak melebihi ukuran container */
     height: auto; /* Menjaga proporsi gambar */
+}
+
+h2{
+    background: #003063;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin: 10px 0;
+    border-radius: 8px;
 }
 
 /* Container untuk form */
