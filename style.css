@@ -94,6 +94,12 @@ article a{
     text-decoration: none;
 }
 
+.article-container {
+    width: 100%; /* Sesuaikan dengan kebutuhan */
+    max-width: 100%; /* Contoh batas maksimal */
+    overflow: hidden; /* Mencegah gambar keluar */
+}
+
 /* Footer */
 footer {
     text-align: left;
@@ -107,8 +113,10 @@ footer {
 img {
     margin-right: 15px; /* Jarak antara gambar dan teks */
     float: left; /* Agar gambar tetap di kiri */
-    max-width: 100%; /* Agar gambar tidak melebihi ukuran container */
-    height: auto; /* Menjaga proporsi gambar */
+    max-width: 100%; /* Gambar tidak akan melebihi lebar container */
+    height: auto; /* Menjaga aspek rasio gambar */
+    display: block; /* Menghindari space ekstra di bawah gambar */
+    
 }
 
 h2{
