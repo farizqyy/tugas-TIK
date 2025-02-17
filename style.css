@@ -100,6 +100,10 @@ article a{
     overflow: hidden; /* Mencegah gambar keluar */
 }
 
+table{
+    color: white;
+}
+
 /* Footer */
 footer {
     text-align: left;
